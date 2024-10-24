@@ -1,0 +1,144 @@
+@media screen and (max-width: 1080px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+    }
+    .about-containers {
+        flex-wrap: wrap;
+        justify-content: center; /* Center items */
+    }
+
+        .experience-details-container {
+            gap: 1rem; /* Reduce gap between project cards */
+        }
+        .details-container {
+            width: 250px; /* Reduce card size for smaller screens */
+        }
+        .project-img {
+            height: 150px; /* Reduce image height */
+        }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .experience-details-container {
+        gap: 1rem; /* Reduce the gap */
+    }
+    .details-container {
+        width: 200px; /* Further reduce card width */
+    }
+    .project-img {
+        height: 125px; /* Further reduce image height */
+    }
+    #desktop-nav {
+        display: none;
+    }
+    #responsive-nav {
+        display: flex;
+        justify-content: center; /* Center nav items */
+        gap: 8rem;
+    }
+    #experience, .experience-details-container {
+        margin-top: 2rem; /* Fixed margin-top */
+    }
+    #profile, .section-container {
+        display: block;
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
+    }
+    .arrow {
+        display: none;
+    }
+    section, .section-container {
+        height: fit-content;
+        margin: 0 auto; /* Center section */
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem; /* Center image */
+    }
+    .about-containers {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .experience-details-container {
+        flex-direction: column; /* Stack project cards vertically */
+        gap: 1.5rem; /* Increase gap for better spacing */
+        align-items: center;
+    }
+    .details-container {
+        width: 100%; /* Make the project card take full width */
+        max-width: 300px; /* Limit the width for smaller devices */
+    }
+    .project-img {
+        width: 100%; /* Make image responsive */
+        height: auto; /* Let the height adjust based on width */
+    }
+    #contact,
+    footer {
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content */
+        justify-content: center; /* Center content */
+    }
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }   
+    article {
+        font-size: 1rem;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers, .contact-info-upper-container, 
+    .btn-container {
+        flex-wrap: wrap;
+        justify-content: center; /* Center items */
+    }
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+        font-size: 1rem;
+    }
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center; /* Center nav links */
+    }
+    .section_pic-container {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+        display: flex; /* Center inner content */
+    }
+    .section_text_p2 {
+        font-size: 1.25rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .text-container {
+        text-align: justify;
+    }
+}
